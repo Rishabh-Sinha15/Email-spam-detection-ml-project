@@ -1,4 +1,3 @@
-# train.py
 from preprocessing import load_and_preprocess
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
