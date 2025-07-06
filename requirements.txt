@@ -1,6 +1,6 @@
+mlflow
 flask
 pandas
 nltk
 scikit-learn
 joblib
-mlflow
