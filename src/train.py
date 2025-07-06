@@ -4,9 +4,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 import pandas as pd
 
-# train.py
-def train_model(C=1.0, solver='lbfgs', max_iter=1000):
-    df = load_and_preprocess('train.csv')
+# ✅ Modified to accept data_path
+def train_model(C=1.0, solver='lbfgs', max_iter=1000, data_path='train.csv'):
+    df = load_and_preprocess(data_path)
     X = df['clean_sms']
     y = df['label']
 
@@ -19,5 +19,3 @@ def train_model(C=1.0, solver='lbfgs', max_iter=1000):
     model.fit(X_train, y_train)
 
     return model, vectorizer, X_test, y_test
-
-# Now hyperparameter_tuning.py can import train_model
