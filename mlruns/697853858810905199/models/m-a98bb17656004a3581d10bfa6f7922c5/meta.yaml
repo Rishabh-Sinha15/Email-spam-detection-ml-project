@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/shant/mlruns/697853858810905199/models/m-a98bb17656004a3581d10bfa6f7922c5/artifacts
+creation_timestamp: 1751810764014
+experiment_id: '697853858810905199'
+last_updated_timestamp: 1751810769664
+model_id: m-a98bb17656004a3581d10bfa6f7922c5
+model_type: null
+name: model
+source_run_id: 8efa57e1c228419090107052fd3104fd
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/shant/mlruns/697853858810905199/d9180e1dfb4942839c5fe163cf64376f/artifacts
+end_time: 1751810769923
+entry_point_name: ''
+experiment_id: '697853858810905199'
+lifecycle_stage: active
+run_id: d9180e1dfb4942839c5fe163cf64376f
+run_name: Best_Model_Summary
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751810769778
+status: 3
+tags: []
+user_id: shant
