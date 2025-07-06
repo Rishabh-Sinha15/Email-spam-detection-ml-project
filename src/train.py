@@ -4,24 +4,20 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 import pandas as pd
 
-# 1) Load & clean
-df = load_and_preprocess('train.csv')
-# IMPORTANT: if you created a "clean_sms" column, use that, otherwise SMS may still have punctuation/stopwords
-X = df['clean_sms']    # ← here, not df['sms']
-y = df['label']
+# train.py
+def train_model(C=1.0, solver='lbfgs', max_iter=1000):
+    df = load_and_preprocess('train.csv')
+    X = df['clean_sms']
+    y = df['label']
 
-# 2) Train vectorizer & model
-vectorizer = TfidfVectorizer()
-X_vec = vectorizer.fit_transform(X)
+    vectorizer = TfidfVectorizer()
+    X_vec = vectorizer.fit_transform(X)
 
-X_train, X_test, y_train, y_test = train_test_split(X_vec, y, test_size=0.2, random_state=42)
-model = LogisticRegression()
-model.fit(X_train, y_train)
+    X_train, X_test, y_train, y_test = train_test_split(X_vec, y, test_size=0.2, random_state=42)
 
-# 3) Prediction helper
-def predict_sms(raw_text: str):
-    # Apply the SAME cleaning + vectorizing as training
-    # If your API is passing cleaned text, skip the preprocess_text step here.
-    x_vec = vectorizer.transform([raw_text])   # shape (1, n_features)
-    pred = model.predict(x_vec)                # returns array length 1
-    return pred[0]
+    model = LogisticRegression(C=C, solver=solver, max_iter=max_iter)
+    model.fit(X_train, y_train)
+
+    return model, vectorizer, X_test, y_test
+
+# Now hyperparameter_tuning.py can import train_model
