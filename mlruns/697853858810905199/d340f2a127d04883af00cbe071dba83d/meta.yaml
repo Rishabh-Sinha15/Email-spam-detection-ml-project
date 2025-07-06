@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/shant/mlruns/697853858810905199/d340f2a127d04883af00cbe071dba83d/artifacts
+end_time: 1751810733538
+entry_point_name: ''
+experiment_id: '697853858810905199'
+lifecycle_stage: active
+run_id: d340f2a127d04883af00cbe071dba83d
+run_name: amusing-fowl-783
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751810727500
+status: 3
+tags: []
+user_id: shant

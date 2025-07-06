@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/shant/mlruns/697853858810905199/decf6a49859d409aaba1049ecbbc8368/artifacts
+end_time: 1751810708024
+entry_point_name: ''
+experiment_id: '697853858810905199'
+lifecycle_stage: active
+run_id: decf6a49859d409aaba1049ecbbc8368
+run_name: trusting-toad-835
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751810701515
+status: 3
+tags: []
+user_id: shant

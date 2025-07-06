@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/shant/mlruns/697853858810905199/6b1a1e5773da4000a8301ab705fef9bf/artifacts
+end_time: 1751810642909
+entry_point_name: ''
+experiment_id: '697853858810905199'
+lifecycle_stage: active
+run_id: 6b1a1e5773da4000a8301ab705fef9bf
+run_name: brawny-carp-210
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751810635779
+status: 3
+tags: []
+user_id: shant
